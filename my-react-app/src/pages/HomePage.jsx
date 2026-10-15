@@ -1,3 +1,5 @@
+import writingCenterLogo from '../assets/writing-center-logo.png';
+import smellCharacter from '../assets/smellcharacter.png';
 import { useState, useEffect } from 'react';
 
 const HomePage = ({ onNavigate }) => {
@@ -36,7 +38,7 @@ const HomePage = ({ onNavigate }) => {
           <nav className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2 pl-2 pr-2 md:pl-4 md:pr-4 lg:px-8">
-              <img src='/src/assets/writing-center-logo.png' alt="Logo" className='w-16 h-16' />
+              <img src={writingCenterLogo} alt="Logo" className='w-16 h-16' />
               <div className="text-white font-bold text-lg">
                 UM-SJTU<br />
                 Writing Center
@@ -97,7 +99,7 @@ const HomePage = ({ onNavigate }) => {
           {/* Cartoon Character */}
           <div className='flex justify-center items-center select-none'>
             <img
-              src='/src/assets/smellcharacter.png'
+              src={smellCharacter}
               alt="Cartoon Character"
               className={`w-[400px] h-[400px] mr-[50px] transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
             />
