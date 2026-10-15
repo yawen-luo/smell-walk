@@ -1,3 +1,4 @@
+import writingCenterLogo from '../assets/writing-center-logo.png';
 import { useState, useEffect } from 'react';
 import { articleService } from '../services/articleService';
 import { uploadService } from '../services/uploadService';
@@ -222,7 +223,7 @@ const SubPage2 = ({ onNavigate }) => {
           <nav className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center space-x-2 pl-2 pr-2 md:pl-4 md:pr-4 lg:px-8">
-              <img src="/src/assets/writing-center-logo.png" alt="Logo" className="w-16 h-16" />
+              <img src={writingCenterLogo} alt="Logo" className="w-16 h-16" />
               <div className="text-white font-bold text-lg">
                 UM-SJTU<br />
                 Writing Center
